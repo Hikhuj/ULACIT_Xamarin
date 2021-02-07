@@ -4,21 +4,60 @@
              x:Class="AppWk03.MainPage">
 
     <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
+        <!-- VIEWS -->
+        <ActivityIndicator Color="DarkRed"
+                           IsRunning="True"/>
+        <!-- Es una cajita, tiene diferentes atributos que se le pueden aplicar -->
+        <BoxView Color="Aquamarine" />
+
+        <!--
+            Un ejemplo de boton
+            El text le da un contenido, se le puede dar un color
+        -->
+        <Button Text="Click"
+                TextColor="Green"
+                FontSize="Large"
+                FontAttributes="Bold"
+                BorderColor="Blue"
+                BorderWidth="2"
+                BorderRadius="20"
+                Clicked="Button_Clicked"/>
+
+        <!-- Cuando hay cambios en el main page, no se pueden cargar como Hot Reload entonces toca recargar -->
+
+        <!--
+            Vamos a limitar la cantidad de anios que se pueden ver
+            x:Name nos permite darle un nombre a nuestra View para cuando estemos en CodeBehind
+            o bien en la parte programable, un nombre para poder identificar este View
+            y asi poder trabajar este view
+        -->
+        <DatePicker x:Name="dtp"
+                    Format="dd/MM/yyyy"/>
+
+        <!-- Es un input text que me permite obtener una caja de texto -->
+        <Editor x:Name="editor"
+                HeightRequest="150"
+                Text="Texto"
+                FontSize="Large"
+                TextColor="Blue" />
+
+        <Entry 
+            VerticalOptions="Center"
+            HorizontalOptions="FillAndExpand"
+            IsPassword="False"
+            Placeholder="Usuario"
+            PlaceholderColor="Green"
+            Text="Username"
+            TextColor="Coral"
+            FontAttributes="Italic"
+            FontSize="Large"/>
+
+        <Image Source="Xamarin.png"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"
+               WidthRequest="100"
+               HeightRequest="100"/>
+
     </StackLayout>
 
 </ContentPage>

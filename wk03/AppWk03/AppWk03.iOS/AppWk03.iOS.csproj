@@ -133,4 +133,7 @@
       <Name>AppWk03</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Xamarin.png" />
+  </ItemGroup>
 </Project>
