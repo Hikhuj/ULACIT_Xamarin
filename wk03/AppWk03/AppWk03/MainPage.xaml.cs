@@ -21,6 +21,23 @@ namespace AppWk03
             // editor.Completed += Editor_Completed;
             // editor.TextChanged += Editor_TextChanged;
 
+            // slider.Value = 50;
+            // lblSlider.Text = slider.Value.ToString();
+
+            // timePicker.Time = new TimeSpan(8,25,50);
+
+            var HTMLSource = new HtmlWebViewSource();
+
+            // Instancia una clase HTMLSource
+            HTMLSource.Html = @"<html>
+                            <body>
+                                <h1>Hola Xamarin</h1>
+                                <p>Bienvenid@s!!!</p>
+                            </body>
+                        </html>";
+
+            webView.Source = HTMLSource;
+
         }
 
         private void Editor_TextChanged(object sender, TextChangedEventArgs e)
@@ -64,7 +81,37 @@ namespace AppWk03
 
         void SearchBar_TextChanged(Object sender, TextChangedEventArgs e)
         {
-            DisplayAlert("Seleccionado","","Ok");
+            DisplayAlert("Seleccionado",
+                        "Valor Anterior" + e.OldTextValue,
+                        "Ok" + );
+        }
+
+        void Switch_Toggled(Object sender, ToggledEventArgs e)
+        {
+        }
+
+        void Switch_Toggled_1(Object sender, ToggledEventArgs e)
+        {
+        }
+
+        void webView_Navigated(System.Object sender, Xamarin.Forms.WebNavigatedEventArgs e)
+        {
+        }
+
+        void webView_Navigated_1(System.Object sender, Xamarin.Forms.WebNavigatedEventArgs e)
+        {
+        }
+
+        void webView_Navigated_1(System.Object sender, Xamarin.Forms.WebNavigatedEventArgs e)
+        {
+        }
+
+        void webView_Navigated_2(System.Object sender, Xamarin.Forms.WebNavigatedEventArgs e)
+        {
+        }
+
+        void webView_Navigating(System.Object sender, Xamarin.Forms.WebNavigatingEventArgs e)
+        {
         }
     }
 }

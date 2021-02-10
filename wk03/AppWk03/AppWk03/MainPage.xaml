@@ -113,6 +113,88 @@
                    TextChanged="SearchBar_TextChanged"
                    />
 
+        <Slider x:Name="slider"
+                BackgroundColor="Gray"
+                Maximum="200"
+                Minimum="100"
+                ValueChanged="slider_ValueChanged"
+                />
+
+        <Label x:Name="lblSlider"
+               FontSize="Large"
+               />
+
+        <Stepper x:Name="stepper"
+                 Minimum="50"
+                 Maximum="250"
+                 Increment="25"
+                 ValueChanged="stepper_ValueChanged"
+                 />
+
+        <Label x:Name="lblStepper"
+               FontSize="Large"
+               />
+
+        <Switch IsToggled="True"
+                Toggled="Switch_Toggled"
+                />
+
+        <TableView Intent="Form"
+                   BackgroundColor="Gray">
+            <!-- Este seria el cuerpo de la tabla -->
+            <TableRoot Title="Table Root">
+                <TableSection Title="Datos"
+                              TextColor="Black">
+                    <TextCell Text="Nombre Completo"
+                              Detail="Detaller de la celda"/>
+                    <EntryCell Placeholder="Nombre..."/>
+                </TableSection>
+                <TableSection Title="Otros Datos">
+                    <EntryCell Placeholder="(506) 8548-2428"
+                               Label="Telefono"
+                               Keyboard="Telephone"/>
+                    <SwitchCell Text="Suscribirse!!!"
+                                />
+                    <ViewCell>
+                        <!--  -->
+                        <ViewCell.View>
+                            <StackLayout>
+                                <BoxView Color="Blue"/>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Label1"/>
+                                    <Label Text="Label2"/>
+                                    <Label Text="Label3"/>
+                                </StackLayout>
+                                <BoxView Color="Yellow"/>
+                                <Switch IsToggled="True"
+                                        Toggled="Switch_Toggled_1"
+                                    />
+                            </StackLayout>
+                        </ViewCell.View>
+                    </ViewCell>
+                </TableSection>
+                <TableSection>
+
+                </TableSection>
+            </TableRoot>
+
+        </TableView>
+
+        <TimePicker x:Name="timePicker"
+                    TextColor="Coral"/>
+
+        <Label Text="Prueba"
+               />
+
+        <!-- Este view a facilitado la vida con el desarrollo de aplicaciones web -->
+        <!-- Permite -->
+        <WebView x:Name="webView"
+                 Source="https://getbootstrap.com/"
+                 Navigated="webView_Navigated"
+                 Navigating="webView_Navigating"
+                 VerticalOptions="FillAndExpand"
+                 />
+
     </StackLayout>
 
 </ContentPage>
