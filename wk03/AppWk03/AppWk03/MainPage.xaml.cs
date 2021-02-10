@@ -14,12 +14,12 @@ namespace AppWk03
         {
             InitializeComponent();
 
-            dtp.Date = DateTime.Now;
-            dtp.MinimumDate = new DateTime(1990,1,1);
-            dtp.MaximumDate = new DateTime(2030,12,31);
+            //dtp.Date = DateTime.Now;
+            //dtp.MinimumDate = new DateTime(1990,1,1);
+            //dtp.MaximumDate = new DateTime(2030,12,31);
 
-            editor.Completed += Editor_Completed;
-            editor.TextChanged += Editor_TextChanged;
+            // editor.Completed += Editor_Completed;
+            // editor.TextChanged += Editor_TextChanged;
 
         }
 
@@ -44,5 +44,27 @@ namespace AppWk03
         // En el code behind se programa todo lo que ocupemos que la herramienta haga o ejecute
         // de acuerdo a la accion que se ejecute.
 
+        private void picker_SelectedIndexChanged(Object sender, EventArgs e)
+        {
+            // Podemos obtener elementos con el picker para poder
+            // seleccionar a un elemento
+            var elementoSeleccionado = picker.SelectedItem as String;
+            DisplayAlert("Elemento Seleccionado", elementoSeleccionado, "Ok");
+        }
+
+        private void btnSimular_Clicked(System.Object sender, System.EventArgs e)
+        {
+            progress.ProgressTo(0.75, 250, Easing.Linear);
+        }
+
+        void SearchBar_SearchButtonPressed(Object sender, EventArgs e)
+        {
+            DisplayAlert("Buscando","Buscando resultados...","Ok");
+        }
+
+        void SearchBar_TextChanged(Object sender, TextChangedEventArgs e)
+        {
+            DisplayAlert("Seleccionado","","Ok");
+        }
     }
 }
