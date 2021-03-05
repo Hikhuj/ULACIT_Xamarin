@@ -30,6 +30,8 @@
         <!-- Cuando hay cambios en el main page, no se pueden cargar como Hot Reload entonces toca recargar -->
 
         <!--
+            DATE PICKER: Usuario elige una fecha.
+
             Vamos a limitar la cantidad de anios que se pueden ver
             x:Name nos permite darle un nombre a nuestra View para cuando estemos en CodeBehind
             o bien en la parte programable, un nombre para poder identificar este View
@@ -39,7 +41,8 @@
                     Format="dd/MM/yyyy"/>
         -->
 
-        <!-- Es un input text que me permite obtener una caja de texto -->
+        <!-- 
+            INPUT TEXT: Para obtener texto de usuario -->
         <!--
         <Editor x:Name="editor"
                 HeightRequest="150"
