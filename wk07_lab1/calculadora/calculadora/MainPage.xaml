@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="calculadora.MainPage">
+
+    <Grid x:Name="calculatorGrid"
+          ColumnSpacing="0"
+          RowSpacing="0"
+          Margin="1"
+          BackgroundColor="#232323">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="160"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="103"/>
+            <ColumnDefinition Width="103"/>
+            <ColumnDefinition Width="103"/>
+            <ColumnDefinition Width="103"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Resultado
+        <Button Text="0"
+                Grid.Row="0"
+                Grid.ColumnSpan="4"></Button>
+        -->
+
+
+        <Label Text="0"
+               FontSize="30"
+               FontAttributes="Bold"
+               Grid.Row="0"
+               Grid.ColumnSpan="3"
+               />
+
+
+        <!-- BUTTONS: Clean, +/-, %, DIV -->
+        <Button Text="C"
+                FontSize="30"
+                FontAttributes="Bold"
+                Grid.Row="1"
+                Grid.Column="0"
+                BorderWidth="1"
+                BorderColor="#4D4D4E"
+                BackgroundColor="#EEEEEE"
+                CornerRadius="0"></Button>
+        <Button Text="+/-"
+                FontSize="30"
+                FontAttributes="Bold"
+                Grid.Row="1"
+                Grid.Column="1"
+                BorderWidth="1"
+                BorderColor="#4D4D4E"
+                BackgroundColor="#EEEEEE"
+                CornerRadius="0"></Button>
+        <Button Text="%"
+                FontSize="30"
+                FontAttributes="Bold"
+                Grid.Row="1"
+                Grid.Column="2"
+                BorderWidth="1"
+                BorderColor="#4D4D4E"
+                BackgroundColor="#EEEEEE"
+                CornerRadius="0"></Button>
+        <Button Text="div"
+                TextTransform="Lowercase"
+                FontSize="30"
+                TextColor="#FFF1E2"
+                FontAttributes="Bold"
+                Grid.Row="1"
+                Grid.Column="3"
+                BorderWidth="1"
+                BorderColor="#4D4D4E"
+                BackgroundColor="#FF9F0F"
+                CornerRadius="0"></Button>
+
+        <!-- BUTTONS: 7, 8, 9, X -->
+        <Button Text="7"
+                FontSize="30"
+                FontAttributes="Bold"
+                Grid.Row="2"
+                Grid.Column="0"
+                BorderWidth="1"
+                BorderColor="#4D4D4E"
+                BackgroundColor="#EEEEEE"
+                CornerRadius="0"></Button>
+        <Button Text="8"
+                FontSize="30"
+                FontAttributes="Bold"
+                Grid.Row="2"
+                Grid.Column="1"
+                BorderWidth="1"
+                BorderColor="#4D4D4E"
+                BackgroundColor="#EEEEEE"
+                CornerRadius="0"></Button>
+        <Button Text="9"
+                FontSize="30"
+                FontAttributes="Bold"
+                Grid.Row="2"
+                Grid.Column="2"
+                BorderWidth="1"
+                BorderColor="#4D4D4E"
+                BackgroundColor="#EEEEEE"
+                CornerRadius="0"></Button>
+        <Button Text="X"
+                FontSize="30"
+                TextColor="#FFF1E2"
+                FontAttributes="Bold"
+                Grid.Row="2"
+                Grid.Column="3"
+                BorderWidth="1"
+                BorderColor="#4D4D4E"
+                BackgroundColor="#FF9F0F"
+                CornerRadius="0"></Button>
+
+        <!-- BUTTONS: 4, 5, 6, - -->
+        <Button Text="4"
+                FontSize="30"
+                FontAttributes="Bold"
+                Grid.Row="3"
+                Grid.Column="0"
+                BorderWidth="1"
+                BorderColor="#4D4D4E"
+                BackgroundColor="#EEEEEE"
+                CornerRadius="0"></Button>
+        <Button Text="5"
+                FontSize="30"
+                FontAttributes="Bold"
+                Grid.Row="3"
+                Grid.Column="1"
+                BorderWidth="1"
+                BorderColor="#4D4D4E"
+                BackgroundColor="#EEEEEE"
+                CornerRadius="0"></Button>
+        <Button Text="6"
+                FontSize="30"
+                FontAttributes="Bold"
+                Grid.Row="3"
+                Grid.Column="2"
+                BorderWidth="1"
+                BorderColor="#4D4D4E"
+                BackgroundColor="#EEEEEE"
+                CornerRadius="0"></Button>
+        <Button Text="-"
+                FontSize="30"
+                TextColor="#FFF1E2"
+                FontAttributes="Bold"
+                Grid.Row="3"
+                Grid.Column="3"
+                BorderWidth="1"
+                BorderColor="#4D4D4E"
+                BackgroundColor="#FF9F0F"
+                CornerRadius="0"></Button>
+
+        <!-- BUTTONS: 1, 2, 3, + -->
+        <Button Text="1"
+                FontSize="30"
+                FontAttributes="Bold"
+                Grid.Row="4"
+                Grid.Column="0"
+                BorderWidth="1"
+                BorderColor="#4D4D4E"
+                BackgroundColor="#EEEEEE"
+                CornerRadius="0"></Button>
+        <Button Text="2"
+                FontSize="30"
+                FontAttributes="Bold"
+                Grid.Row="4"
+                Grid.Column="1"
+                BorderWidth="1"
+                BorderColor="#4D4D4E"
+                BackgroundColor="#EEEEEE"
+                CornerRadius="0"></Button>
+        <Button Text="3"
+                FontSize="30"
+                FontAttributes="Bold"
+                Grid.Row="4"
+                Grid.Column="2"
+                BorderWidth="1"
+                BorderColor="#4D4D4E"
+                BackgroundColor="#EEEEEE"
+                CornerRadius="0"></Button>
+        <Button Text="+"
+                TextColor="#FFF1E2"
+                FontAttributes="Bold"
+                Grid.Row="4"
+                Grid.Column="3"
+                BorderWidth="1"
+                BorderColor="#4D4D4E"
+                BackgroundColor="#FF9F0F"
+                CornerRadius="0"></Button>
+
+        <!-- BUTTONS: 0, ., =, -->
+        <Button Text="0"
+                FontSize="30"
+                FontAttributes="Bold"
+                Grid.Row="5"
+                Grid.ColumnSpan="2"
+                BorderWidth="1"
+                BorderColor="#4D4D4E"
+                BackgroundColor="#EEEEEE"
+                CornerRadius="0"></Button>
+        <Button Text="."
+                FontSize="30"
+                FontAttributes="Bold"
+                Grid.Row="5"
+                Grid.Column="2"
+                BorderWidth="1"
+                BorderColor="#4D4D4E"
+                BackgroundColor="#EEEEEE"
+                CornerRadius="0"></Button>
+        <Button Text="="
+                TextColor="#FFF1E2"
+                FontAttributes="Bold"
+                Grid.Row="5"
+                Grid.Column="3"
+                BorderWidth="1"
+                BorderColor="#4D4D4E"
+                BackgroundColor="#FF9F0F"
+                CornerRadius="0"></Button>
+
+        <!--
+        <Button Text="2"
+                Grid.Row="0"
+                Grid.Column="1"></Button>
+
+        <Button Text="3"
+                Grid.Row="0"
+                Grid.Column="2"></Button>
+
+        <Button Text="."
+                Grid.ColumnSpan="2"
+                Grid.Row="1"></Button>
+
+        <Button Text="."
+                Grid.Row="1"
+                Grid.Column="2"></Button>
+        -->
+    </Grid>
+
+
+
+
+</ContentPage>
