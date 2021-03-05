@@ -32,32 +32,35 @@
 
 
         <Label Text="0"
-               FontSize="30"
+               FontSize="50"
+               Margin="0,5"
+               HorizontalTextAlignment="End"
                FontAttributes="Bold"
+               TextColor="#EEEEEE"
                Grid.Row="0"
-               Grid.ColumnSpan="3"
+               Grid.ColumnSpan="4"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="EndAndExpand"
                />
 
 
         <!-- BUTTONS: Clean, +/-, %, DIV -->
         <Button Text="C"
                 FontSize="30"
-                FontAttributes="Bold"
                 Grid.Row="1"
                 Grid.Column="0"
                 BorderWidth="1"
                 BorderColor="#4D4D4E"
-                BackgroundColor="#EEEEEE"
-                CornerRadius="0"></Button>
+                BackgroundColor="#BCBCBC"
+                CornerRadius="0"/>
         <Button Text="+/-"
                 FontSize="30"
-                FontAttributes="Bold"
                 Grid.Row="1"
                 Grid.Column="1"
                 BorderWidth="1"
                 BorderColor="#4D4D4E"
-                BackgroundColor="#EEEEEE"
-                CornerRadius="0"></Button>
+                BackgroundColor="#BCBCBC"
+                CornerRadius="0"/>
         <Button Text="%"
                 FontSize="30"
                 FontAttributes="Bold"
@@ -65,19 +68,18 @@
                 Grid.Column="2"
                 BorderWidth="1"
                 BorderColor="#4D4D4E"
-                BackgroundColor="#EEEEEE"
-                CornerRadius="0"></Button>
+                BackgroundColor="#BCBCBC"
+                CornerRadius="0"/>
         <Button Text="div"
                 TextTransform="Lowercase"
                 FontSize="30"
                 TextColor="#FFF1E2"
-                FontAttributes="Bold"
                 Grid.Row="1"
                 Grid.Column="3"
                 BorderWidth="1"
                 BorderColor="#4D4D4E"
                 BackgroundColor="#FF9F0F"
-                CornerRadius="0"></Button>
+                CornerRadius="0"/>
 
         <!-- BUTTONS: 7, 8, 9, X -->
         <Button Text="7"
@@ -88,7 +90,7 @@
                 BorderWidth="1"
                 BorderColor="#4D4D4E"
                 BackgroundColor="#EEEEEE"
-                CornerRadius="0"></Button>
+                CornerRadius="0"/>
         <Button Text="8"
                 FontSize="30"
                 FontAttributes="Bold"
@@ -97,7 +99,7 @@
                 BorderWidth="1"
                 BorderColor="#4D4D4E"
                 BackgroundColor="#EEEEEE"
-                CornerRadius="0"></Button>
+                CornerRadius="0"/>
         <Button Text="9"
                 FontSize="30"
                 FontAttributes="Bold"
@@ -106,17 +108,16 @@
                 BorderWidth="1"
                 BorderColor="#4D4D4E"
                 BackgroundColor="#EEEEEE"
-                CornerRadius="0"></Button>
+                CornerRadius="0"/>
         <Button Text="X"
                 FontSize="30"
                 TextColor="#FFF1E2"
-                FontAttributes="Bold"
                 Grid.Row="2"
                 Grid.Column="3"
                 BorderWidth="1"
                 BorderColor="#4D4D4E"
                 BackgroundColor="#FF9F0F"
-                CornerRadius="0"></Button>
+                CornerRadius="0"/>
 
         <!-- BUTTONS: 4, 5, 6, - -->
         <Button Text="4"
@@ -127,7 +128,7 @@
                 BorderWidth="1"
                 BorderColor="#4D4D4E"
                 BackgroundColor="#EEEEEE"
-                CornerRadius="0"></Button>
+                CornerRadius="0"/>
         <Button Text="5"
                 FontSize="30"
                 FontAttributes="Bold"
@@ -136,7 +137,7 @@
                 BorderWidth="1"
                 BorderColor="#4D4D4E"
                 BackgroundColor="#EEEEEE"
-                CornerRadius="0"></Button>
+                CornerRadius="0"/>
         <Button Text="6"
                 FontSize="30"
                 FontAttributes="Bold"
@@ -145,17 +146,16 @@
                 BorderWidth="1"
                 BorderColor="#4D4D4E"
                 BackgroundColor="#EEEEEE"
-                CornerRadius="0"></Button>
+                CornerRadius="0"/>
         <Button Text="-"
-                FontSize="30"
+                FontSize="40"
                 TextColor="#FFF1E2"
-                FontAttributes="Bold"
                 Grid.Row="3"
                 Grid.Column="3"
                 BorderWidth="1"
                 BorderColor="#4D4D4E"
                 BackgroundColor="#FF9F0F"
-                CornerRadius="0"></Button>
+                CornerRadius="0"/>
 
         <!-- BUTTONS: 1, 2, 3, + -->
         <Button Text="1"
@@ -166,7 +166,7 @@
                 BorderWidth="1"
                 BorderColor="#4D4D4E"
                 BackgroundColor="#EEEEEE"
-                CornerRadius="0"></Button>
+                CornerRadius="0"/>
         <Button Text="2"
                 FontSize="30"
                 FontAttributes="Bold"
@@ -175,7 +175,7 @@
                 BorderWidth="1"
                 BorderColor="#4D4D4E"
                 BackgroundColor="#EEEEEE"
-                CornerRadius="0"></Button>
+                CornerRadius="0"/>
         <Button Text="3"
                 FontSize="30"
                 FontAttributes="Bold"
@@ -184,16 +184,16 @@
                 BorderWidth="1"
                 BorderColor="#4D4D4E"
                 BackgroundColor="#EEEEEE"
-                CornerRadius="0"></Button>
+                CornerRadius="0"/>
         <Button Text="+"
+                FontSize="40"
                 TextColor="#FFF1E2"
-                FontAttributes="Bold"
                 Grid.Row="4"
                 Grid.Column="3"
                 BorderWidth="1"
                 BorderColor="#4D4D4E"
                 BackgroundColor="#FF9F0F"
-                CornerRadius="0"></Button>
+                CornerRadius="0"/>
 
         <!-- BUTTONS: 0, ., =, -->
         <Button Text="0"
@@ -204,7 +204,7 @@
                 BorderWidth="1"
                 BorderColor="#4D4D4E"
                 BackgroundColor="#EEEEEE"
-                CornerRadius="0"></Button>
+                CornerRadius="0"/>
         <Button Text="."
                 FontSize="30"
                 FontAttributes="Bold"
@@ -213,16 +213,16 @@
                 BorderWidth="1"
                 BorderColor="#4D4D4E"
                 BackgroundColor="#EEEEEE"
-                CornerRadius="0"></Button>
+                CornerRadius="0"/>
         <Button Text="="
+                FontSize="40"
                 TextColor="#FFF1E2"
-                FontAttributes="Bold"
                 Grid.Row="5"
                 Grid.Column="3"
                 BorderWidth="1"
                 BorderColor="#4D4D4E"
                 BackgroundColor="#FF9F0F"
-                CornerRadius="0"></Button>
+                CornerRadius="0"/>
 
         <!--
         <Button Text="2"
