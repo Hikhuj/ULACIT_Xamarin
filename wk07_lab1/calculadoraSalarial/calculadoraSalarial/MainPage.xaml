@@ -44,7 +44,7 @@
                Grid.Row="0"
                Grid.ColumnSpan="3"/>
 
-        <Label
+        <Label></Label>
 
     </Grid>
 
