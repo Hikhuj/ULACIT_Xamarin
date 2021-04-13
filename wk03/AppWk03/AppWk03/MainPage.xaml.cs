@@ -82,8 +82,9 @@ namespace AppWk03
         void SearchBar_TextChanged(Object sender, TextChangedEventArgs e)
         {
             DisplayAlert("Seleccionado",
-                        "Valor Anterior" + e.OldTextValue,
-                        "Ok" + );
+                        " Valor Anterior " + e.OldTextValue +
+                        " Valor nuevo " + e.NewTextValue,
+                        "Ok");
         }
 
         void Switch_Toggled(Object sender, ToggledEventArgs e)
@@ -95,10 +96,6 @@ namespace AppWk03
         }
 
         void webView_Navigated(System.Object sender, Xamarin.Forms.WebNavigatedEventArgs e)
-        {
-        }
-
-        void webView_Navigated_1(System.Object sender, Xamarin.Forms.WebNavigatedEventArgs e)
         {
         }
 

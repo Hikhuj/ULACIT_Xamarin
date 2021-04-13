@@ -115,13 +115,21 @@
                    SearchButtonPressed="SearchBar_SearchButtonPressed"
                    TextChanged="SearchBar_TextChanged"
                    />
+        
+        <Slider x:Name="slider"
+                BackgroundColor="Gray"
+                Maximum="200"
+                Minimum="100"
+                />
 
+        <!--
         <Slider x:Name="slider"
                 BackgroundColor="Gray"
                 Maximum="200"
                 Minimum="100"
                 ValueChanged="slider_ValueChanged"
                 />
+        -->
 
         <Label x:Name="lblSlider"
                FontSize="Large"

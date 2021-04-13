@@ -3,11 +3,31 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="calculadora.MainPage">
 
+    <!--
+        Cuando tenemos la conexion lista de DataBinding vamos a trabajar
+        en este lado todo lo que ocupemos de datos a obtener para trabajar
+        El siguiente ejemplo es para cuando hay un Entry.
+        Con esto podemos crear un enlace UI -> Model capturando el dato que
+        se refleje del entry para enviarlo al modelo y procesar una accion
+
+        <EntryCell x:Name="txtTotal"
+                    Label="Total"
+                    Placeholder="Total"
+                    Text="{Binding Total}" <- Aqui estamos asociando que
+                                              esta entrada va a ser
+                                              la que se use para una clase con
+                                              un atributo llamado "Total"
+                
+    -->
+
+    <!-- Asppectos de Grilla -->
     <Grid x:Name="calculatorGrid"
           ColumnSpacing="0"
           RowSpacing="0"
-          Margin="1"
+          Margin="0"
           BackgroundColor="#232323">
+
+        <!-- Diagrama de lineas -->
         <Grid.RowDefinitions>
             <RowDefinition Height="160"/>
             <RowDefinition Height="100"/>
@@ -17,6 +37,7 @@
             <RowDefinition Height="100"/>
         </Grid.RowDefinitions>
 
+        <!-- Diagrama de Columnas -->
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="103"/>
             <ColumnDefinition Width="103"/>
@@ -24,13 +45,7 @@
             <ColumnDefinition Width="103"/>
         </Grid.ColumnDefinitions>
 
-        <!-- Resultado
-        <Button Text="0"
-                Grid.Row="0"
-                Grid.ColumnSpan="4"></Button>
-        -->
-
-
+        <!-- Pantalla de calculadora -->
         <Label Text="0"
                FontSize="50"
                Margin="0,5"
@@ -44,7 +59,7 @@
                />
 
 
-        <!-- BUTTONS: Clean, +/-, %, DIV -->
+        <!-- BUTTONS: C, +/-, %, DIV -->
         <Button Text="C"
                 FontSize="30"
                 Grid.Row="1"
@@ -224,26 +239,6 @@
                 BackgroundColor="#FF9F0F"
                 CornerRadius="0"/>
 
-        <!--
-        <Button Text="2"
-                Grid.Row="0"
-                Grid.Column="1"></Button>
-
-        <Button Text="3"
-                Grid.Row="0"
-                Grid.Column="2"></Button>
-
-        <Button Text="."
-                Grid.ColumnSpan="2"
-                Grid.Row="1"></Button>
-
-        <Button Text="."
-                Grid.Row="1"
-                Grid.Column="2"></Button>
-        -->
     </Grid>
 
 
-
-
-</ContentPage>
