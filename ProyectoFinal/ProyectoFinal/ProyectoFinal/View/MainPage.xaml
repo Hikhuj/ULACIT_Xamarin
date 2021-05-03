@@ -17,6 +17,7 @@
                      x:Name="btnLogin"
                    IconImageSource="login.png"></ToolbarItem>
     </ContentPage.ToolbarItems>
+
     <ContentPage.Content>
         <Grid RowSpacing="20">
             <Grid.RowDefinitions>
@@ -50,6 +51,7 @@
                         Grid.Column="0"
                         Grid.ColumnSpan="3"
                         Grid.Row="0"></SearchBar>
+
                 <Button Text="Filtros"
                             TextColor="White"
                             BackgroundColor="#f1c40f"
@@ -57,10 +59,16 @@
                             Grid.Row="1"
                             Grid.Column="1"></Button>
 
-
-              
-             
-
+                <!-- btn AGREGAR CASA -->
+                <Button Text="Agregar casa"
+                        TextColor="White"
+                        BackgroundColor="#f1c40f"
+                        FontSize="Medium"
+                        Grid.Row="2"
+                        Grid.Column="1"
+                        Clicked="GoToHomeProfile"/>
+                        
+                <!-- /btn AGREGAR CASA -->
 
             </StackLayout>
 

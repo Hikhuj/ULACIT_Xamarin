@@ -18,6 +18,7 @@ namespace ProyectoFinal.View
             InitializeComponent();
 
             BindingContext = new LoginViewModel();
+
             btnregistro.Clicked += (sender, e) =>
             {
                 Navigation.PushAsync(new Registro());
